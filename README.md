@@ -12,21 +12,22 @@ You should show in a report who add the article that doesn’t has comments and 
 
 
 ## Introduction
-TBC
+The project is dividied into 2 layers:
+1. Endpoints: Contain a class Endpoints with the 3 endpoints to be used during the testing.
+2. Tests: Contain a testNG test to iterate through a list of articles id
+**Initially, the approach was to create four different testNG test (one for each article id provided) and call the method testMain sending each article id. However, the approach of having one single test iterating based on the number of items in an array of articles id make the test more flexible, since n number of articles ids may be added and to further modification should be done on the code. Just by adding articles id, the code will be executed.**
+   
 
 ## Installation
 
-1. TBC
+1. Verify that Java is installed in your computer, by opening the console/terminal and type "java --version".
+2. If not, install Java: https://www.java.com/en/download/help/download_options.html.
+3. Download or clone the repository.
 
 ## Usage
 
 How to execute the tests?
-* From command line
-  - Download the file "apiTesting.jar" to a directory.
-  - Open the console and go to the selected directory.
-  - Type "java -jar apiTesting.jar" and press ENTER.
 * FromIDE (Example with Eclipse)
-  - Download or clone the repository.
   - Open Eclipse (or the IDE of your preference).
   - Right click on src.test/testAPI.java
   - Click on "Run as"/ TestNG test.
