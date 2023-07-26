@@ -28,7 +28,7 @@ The project is divided into 2 layers:
 
 How to execute the tests?
 * FromIDE (Example with Eclipse)
-  - Open Eclipse (or the IDE of your preference).
-  - Right click on src.test/testAPI.java
-  - Click on "Run as"/ TestNG test.
-  - The results will be shown in the console of the IDE showing: status of the test + user name (and article id) of those articles with no comments.
+* Open Eclipse (or the IDE of your preference).
+* Right click on src.test/testAPI.java
+* Click on "Run as"/ TestNG test.
+* The results will be shown in the console of the IDE showing: status of the test + user name (and article id) of those articles with no comments.
