@@ -18,10 +18,11 @@ public class testAPI {
 		//Call the each endpoint in the array
 		for (int i = 0; i < articleIds.length; i++) {
 			Boolean haveComments = endpoints.doesTheArticleHaveComments(articleIds[i]);
-			if (haveComments = false) {
+			if (haveComments == false) {
 				int userId = endpoints.getArticleInformationById(articleIds[i]);
-				String UsernName = endpoints.getUserNameByUserId(userId);
-				UserNamesWithArticlesWithNoComments.add(UsernName + "(id: " + articleIds[i] + ").");
+				String UserName = endpoints.getUserNameByUserId(userId);
+				//UserNamesWithArticlesWithNoComments.add(UserName + "(id: " + articleIds[i] + ").");
+				UserNamesWithArticlesWithNoComments.add(UserName + "with id: " + userId +  " (article id: " + articleIds[i] + ").");
 			}
 		}	
 		//Prepare data for reporting
